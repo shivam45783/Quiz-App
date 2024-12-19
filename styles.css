@@ -99,7 +99,7 @@ button:hover {
   margin-left: 40px;
 }
 .selected {
-  background-color: darkcyan;
+  background-color: rgb(2, 109, 191);
 }
 .unselect {
   background-color: #333333;
