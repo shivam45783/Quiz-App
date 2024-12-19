@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Quiz App</h1>
+      <div id="quiz-container">
+        <div id="question-container" class="hidden">
+          <h2 id="question-text"></h2>
+          <ul id="choices-list">
+            <!-- Choices will be added dynamically here -->
+          </ul>
+          <button id="next-btn" class="hidden">Next Question</button>
+          <button id="lock" class="hidden">Lock</button>
+        </div>
+        <div id="result-container" class="hidden">
+          <h2>Your Score:</h2>
+          <p id="score"></p>
+          <button id="restart-btn">Restart Quiz</button>
+        </div>
+        <div id="add-question">
+          <form id="question-form">
+            <label for="inp-question"> Question:
+              <input type="text" placeholder="Enter the Question" class="inp-box" id="inp-question">
+            </label>
+            <label for="inp-option"> Options:
+              <input type="text" placeholder="Add Options" class="inp-box" id="inp-option">
+            </label>
+            <label for="answer">Answer:
+              <input type="text" placeholder="Enter correct answer" id="answer" class="inp-box">
+            </label>
+            <button id="add">Add</button>
+          </form>
+        </div>
+        <button id="start-btn">Start Quiz</button>
+        
+        <button id="new-question">Add New Question</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
